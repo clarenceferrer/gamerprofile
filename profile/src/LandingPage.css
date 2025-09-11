@@ -1,0 +1,216 @@
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('/edited.png') center center / cover no-repeat;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin: 0 0 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(45deg, #ffffff, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-logo {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.6));
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin: 0 0 40px 0;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.hero-state {
+  margin: 10px 0 30px 0;
+  opacity: 0.9;
+}
+
+.loading-state {
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.gamer-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.gamer-cards-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  place-items: center;
+  place-content: center;
+}
+
+.gamer-cards-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  justify-items: center;
+  margin: 0 auto;
+  place-items: center;
+  place-content: center;
+}
+
+.gamer-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.gamer-card {
+  background: rgba(14, 14, 14, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  height: 450px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding-top: 190px;
+}
+
+
+.player-image {
+  width: 260px;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.25s ease;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.35);
+}
+
+/* Hover effect only when hovering the picture itself */
+.player-image:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-50%) scale(1.03);
+}
+
+.player-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.player-image:hover img {
+  transform: scale(1.06);
+}
+
+.gamer-card h3 {
+  font-size: 2rem;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.gamer-card p {
+  font-size: 1.5rem;
+  margin: 0 0 6px 0;
+  opacity: 0.85;
+  color: #cccccc;
+  margin-bottom: 30PX;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .gamer-cards-container {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .gamer-cards-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    place-items: center;
+    place-content: center;
+  }
+
+  .gamer-cards-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    place-items: center;
+    place-content: center;
+  }
+
+  .gamer-card {
+    padding: 16px;
+    height: 430px;
+    width: 100%;
+    max-width: 360px;
+    padding-top: 165px;
+  }
+
+  .player-image {
+    width: 220px;
+    height: 220px;
+    top: -45px;
+  }
+}
