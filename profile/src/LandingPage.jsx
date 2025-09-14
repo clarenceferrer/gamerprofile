@@ -39,7 +39,7 @@ const LandingPage = () => {
                     <p>Fatima Sierra</p>
                   </div>
                 </Link>
-                <Link to="/santos" className="gamer-card-link">
+                <Link to="kate-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
                       <img src="/api/placeholder/200/200" alt="Kate Santos" />
