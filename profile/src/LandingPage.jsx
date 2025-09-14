@@ -46,10 +46,14 @@ const LandingPage = () => {
                 <Link to="/kate-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
-                      <img src="/api/placeholder/200/200" alt="Kate Santos" />
+                       <img 
+                        src="/kateprofile.jpg" 
+                        alt="Kate Santos" 
+                        onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "/kateprofile.jpg"; }}
+                      />
                     </div>
-                    <h3>Santos</h3>
-                    <p>Kate Santos</p>
+                    <h3>Kalea.</h3>
+                    <p>Kate Cristen Santos</p>
                   </div>
                 </Link>
                 <Link to="/baroma" className="gamer-card-link">
