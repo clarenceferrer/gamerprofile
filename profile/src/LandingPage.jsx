@@ -33,13 +33,17 @@ const LandingPage = () => {
                 <Link to="/sierra" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
-                      <img src="/api/placeholder/200/200" alt="Fatima Sierra" />
-                    </div>
-                    <h3>Sierra</h3>
-                    <p>Fatima Sierra</p>
+                      <img 
+                      src="/klye.jpg" 
+                      alt="Fatima Klye Sierra" 
+                      onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "/klye.jpg"; }}
+                    />
+                  </div>
+                  <h3>Klye</h3>
+                    <p>Fatima Klye Sierra</p>
                   </div>
                 </Link>
-                <Link to="/santos" className="gamer-card-link">
+                <Link to="/kate-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
                       <img src="/api/placeholder/200/200" alt="Kate Santos" />

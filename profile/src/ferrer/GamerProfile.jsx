@@ -157,4 +157,3 @@ const GamerProfile = () => {
 };
 
 export default GamerProfile;
-
