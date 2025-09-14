@@ -30,7 +30,7 @@ const LandingPage = () => {
           <div className="cards-overlap">
             <div className="gamer-cards-container">
               <div className="gamer-cards-grid-1">
-                <Link to="/sierra" className="gamer-card-link">
+                <Link to="/klye-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
                       <img 
