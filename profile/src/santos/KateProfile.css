@@ -34,29 +34,28 @@ h1{
 
 .back{
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 50px;
+  top: 500px;
+  left: 0;
+  color: white;
+  width: 80px;
   height: 50px;
-  background: rgba(139, 0, 0, 0.8);
-  border-radius: 50%;
+  border-radius: 10%;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
+  border: 2px solid #8b0000;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 
 .back a {
   color: #ffffff; 
   text-decoration: none;
-  display: flex;
+  display:contents;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -77,14 +76,13 @@ h1{
 
 .header-info {
   position: relative;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
   text-align: center;
   height: 372px;
   top: 50px;
-  background: url('/coverheader.png');
-  backdrop-filter: blur(200px);
+  background: url('/mylovie.png');
+  background-size: cover;
   border-radius: 20px;
   padding: 30px;
   margin: 0 0 20px 0;
@@ -92,24 +90,31 @@ h1{
   width: 100%;
   border: 2px solid rgba(139, 0, 0, 0.3);
 }
-.profile-container {
-  justify-content: left;     /* center the whole block in the screen */
-  color: white;
-  margin-top: 7px;
+
+.profilecontainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  min-height: 100vh;
 }
 
 .profile-image {
   width: 300px;
   height: 300px;
-  border-radius: 10%;
-  display: block;
-  margin-right: 1000px;   /* stick to left */
+  border-radius: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 100px;
 }
+
+
 .details{
     margin-left: 50px;
     text-align: left;        /* align text to left */
-    margin-top: -400px;   /* move up to align with image */
-    margin-left: 300px;  /* move right to create space from image */
+    margin-top: -900px;   /* move up to align with image */
+    margin-left: 500px;  /* move right to create space from image */
 }
 
 .ingame-name {
@@ -247,4 +252,10 @@ h1{
 .achievements::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
+}
+.clickprompt {
+  text-align: center;
+  margin-top: -200px;
+  font-size: 1.8rem;
+  font-family: 'Arial', sans-serif;
 }

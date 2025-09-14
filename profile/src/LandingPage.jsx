@@ -30,7 +30,7 @@ const LandingPage = () => {
           <div className="cards-overlap">
             <div className="gamer-cards-container">
               <div className="gamer-cards-grid-1">
-                <Link to="/sierra" className="gamer-card-link">
+                <Link to="/klye-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
                       <img 
@@ -46,21 +46,14 @@ const LandingPage = () => {
                 <Link to="/kate-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
-<<<<<<< HEAD
                        <img 
-                        src="/kateprofile.jpg" 
+                        src="/katelanding.jpg" 
                         alt="Kate Santos" 
                         onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "/kateprofile.jpg"; }}
                       />
                     </div>
                     <h3>Kalea.</h3>
                     <p>Kate Cristen Santos</p>
-=======
-                      <img src="/kate.jpg" alt="Kate Santos" />
-                    </div>
-                    <h3>Kalea</h3>
-                    <p>Kate Santos</p>
->>>>>>> 8a361493fa52e44f4c85e9a8768c6fd83d872a4f
                   </div>
                 </Link>
                 <Link to="/baroma" className="gamer-card-link">
