@@ -14,9 +14,9 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="hero-section">
-        <img className="hero-logo" src="/vite.svg" alt="Achuchu Gaming Logo" />
-        <h1 className="hero-title">Welcome to Achuchu Gaming</h1>
-        <p className="hero-subtitle">Discover the world of competitive gaming</p>
+        <img className="hero-logo" src="/logo.png" alt="Achuchu Gaming Logo" />
+        <h1 className="hero-title">AltF4ce</h1>
+        <p className="hero-subtitle">Exit for Them, Glory for Us.</p>
         
         {isLoading && (
           <div className="hero-state loading-state">Loading profiles…</div>
@@ -46,9 +46,9 @@ const LandingPage = () => {
                 <Link to="/kate-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
-                      <img src="/api/placeholder/200/200" alt="Kate Santos" />
+                      <img src="/kate.jpg" alt="Kate Santos" />
                     </div>
-                    <h3>Santos</h3>
+                    <h3>Kalea</h3>
                     <p>Kate Santos</p>
                   </div>
                 </Link>

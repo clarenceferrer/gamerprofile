@@ -96,21 +96,21 @@ const gamerData = {
         <h1 className="page-title">Welcome to Kalea's Gaming Profile</h1>
 
         <div className="header-info">
-        <div className="profile-container">
-          <img 
-            src="kate.jpg"
-            alt="Kate Santos"
-            className="profile-image"
-          />
-        </div>
+          <div className="back">
+            <Link to="/">←</Link>
+          </div>
+          <div className="profile-container">
+            <img 
+              src="kate.jpg"
+              alt="Kate Santos"
+              className="profile-image"
+            />
+          </div>
 
           <div className="details">
             <h2 className="ingame-name">{gamerData.ign}</h2>
             <p className="name">{gamerData.realName}</p>
           </div>
-        </div>
-        <div className="back">
-          <Link to="/">←</Link>
         </div>
         <div className="games">
           <h3>Games</h3>
