@@ -61,28 +61,28 @@ const gamerData = {
         image: "codm.jpeg",
         milestones: [
           "Reached Legendary 3 times",
+          "Main Mode: Multiplayer ",
+          "Favorite Weapon: KRM-262",
+          "Favorite Mode: Search and Destroy"
         ]
       },
       {
         name: "Blockblast",
         image: "blockblast.jpg",
         milestones: [
-          "Grandmaster rank",
-          "1500+ matches played",
-          "Survival rate: 75%",
-          "Average damage per match: 1200+",
-          "100+ chicken dinners"
-        ]
+          "High Score: 40,210",
+          "Played Since: 2023",
+          "Favorite Mode: Classic",
+    ]
       },
       {
         name: "Honor of Kings",
         image: "hok.jpg",
         milestones: [
-          "Prestige Level 10",
-          "3000+ matches completed",
-          "Top weapon mastery",
-          "95% mission completion",
-          "Multiple tournament wins"
+          "Achieved Gold Rank",
+          "Main Role: Support",
+          "Main Hero: Cai Yan",
+          "Played Since: 2025",
         ]
       }
     ]
@@ -99,7 +99,7 @@ const gamerData = {
           <div className="back">
             <Link to="/">←</Link>
           </div>
-          <div className="profile-container">
+          <div className="profilecontainer">
             <img 
               src="kate.jpg"
               alt="Kate Santos"
@@ -145,13 +145,15 @@ const gamerData = {
                 </ul>
               </div>
             </div>
+            <div className="bottom"></div>
           </div>
         </div>
       ))}
     </div>
     </div>
     </div>
-    </div>
+              <p className="clickprompt">Click the card to view my achievements</p>
+            </div>
 );
 }
 export default KateProfile;
