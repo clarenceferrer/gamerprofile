@@ -105,74 +105,74 @@ export default function QuiasProfile() {
 
   return (
     
-    <div className="dashboard-root">
+    <div className="dashboard-root-quias">
       {/* Left Sidebar */}
-      <aside className="left-sidebar">
-        <div className="brand">
-          <div className="brand-icon">🎮</div>
-          <div className="brand-title">Andrei's playground</div>
+      <aside className="left-sidebar-quias">
+        <div className="brand-quias">
+          <div className="brand-icon-quias">🎮</div>
+          <div className="brand-title-quias">Andrei's playground</div>
         </div>
 
-        <nav className="side-menu">
-          <button className="menu-item active">Dashboard</button>
-          <button className="menu-item">Games</button>
-          <button className="menu-item">Feedback</button>
-          <button className="menu-item">Favorite</button>
-          <button className="menu-item">Tournaments</button>
+        <nav className="side-menu-quias">
+          <button className="menu-item-quias active">Dashboard</button>
+          <button className="menu-item-quias">Games</button>
+          <button className="menu-item-quias">Feedback</button>
+          <button className="menu-item-quias">Favorite</button>
+          <button className="menu-item-quias">Tournaments</button>
         </nav>
 
-        <div className="premium-box">
-          <div className="bolt">⚡</div>
-          <div className="premium-info">Enjoy Full Premium Access</div>
-          <button className="unlock-btn">Unlock Now</button>
+        <div className="premium-box-quias">
+          <div className="bolt-quias">⚡</div>
+          <div className="premium-info-quias">Enjoy Full Premium Access</div>
+          <button className="unlock-btn-quias">Unlock Now</button>
         </div>
       </aside>
 
       {/* Main Content */}
-      <main className="main-content">
+      <main className="main-content-quias">
         {/* Topbar */}
-        <header className="topbar">
-          <div className="search-wrap">
-            <input className="search-input" placeholder="Search Now" />
+        <header className="topbar-quias">
+          <div className="search-wrap-quias">
+            <input className="search-input-quias" placeholder="Search Now" />
           </div>
 
-          <div className="top-actions">
-            <button className="icon-btn" title="Notifications">🔔</button>
-            <div className="profile-pill">
+          <div className="top-actions-quias">
+            <button className="icon-btn-quias" title="Notifications">🔔</button>
+            <div className="profile-pill-quias">
               <img
-                className="avatar"
+                className="avatar-quias"
                 alt="avatar"
                 src={`data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'></svg>`}
               />
-              <span className="profile-name">Andrei Quias</span>
-              <button className="chev">▾</button>
+              <span className="profile-name-quias">Andrei Quias</span>
+              <button className="chev-quias">▾</button>
             </div>
           </div>
         </header>
 
         {/* Content Grid */}
-        <div className="content-grid">
+        <div className="content-grid-quias">
           {/* Main column */}
           <section className="column-main">
             {/* Hero Banner */}
-            <div className="hero">
-              <div className="hero-left">
+            <div className="hero-quias">
+              <div className="hero-left-quias">
                 <div className="tag">Live Online Games</div>
-                <h2 className="hero-title">Call of Duty: Warzone</h2>
-                <div className="hero-meta">
+                <h2 className="hero-title-quias">Call of Duty: Warzone</h2>
+                <div className="hero-meta-quias">
                   Playing: <strong>178+</strong> · Action
                 </div>
               </div>
 
-              <div className="hero-actions">
+              <div className="hero-actions-quias">
                 <button
-                  className="btn-outline"
+                  className="btn-outline-quias"
                   onClick={() => alert("Added to favorites")}
                 >
                   Add to Favorites
                 </button>
                 <button
-                  className="btn-primary"
+                  className="btn-primary-quias"
                   onClick={() => alert("Launching Call of Duty: Warzone...")}
                 >
                   Play Now
@@ -181,16 +181,16 @@ export default function QuiasProfile() {
             </div>
 
             {/* Popular Games */}
-            <div className="panel">
-              <div className="panel-header">
+            <div className="panel-quias">
+              <div className="panel-header-quias">
                 <h3>
                   Popular Games <span className="fire">🔥</span>
                 </h3>
-                <div className="category-row">
+                <div className="category-row-quias">
                   {CATEGORIES.map((c) => (
                     <button
                       key={c}
-                      className={`cat-btn ${selectedCat === c ? "active" : ""}`}
+                      className={`cat-btn-quias ${selectedCat === c ? "active" : ""}`}
                       onClick={() => setSelectedCat(c)}
                     >
                       {c}
@@ -199,25 +199,25 @@ export default function QuiasProfile() {
                 </div>
               </div>
 
-              <div className="games-grid">
+              <div className="games-grid-quias">
                 {games.map((g) => (
-                  <div key={g.id} className="game-card">
-                    <div className="game-art">
+                  <div key={g.id} className="game-card-quias">
+                    <div className="game-art-quias">
                       {g.img ? (
-                        <img src={g.img} alt={g.title} className="game-img" />
+                        <img src={g.img} alt={g.title} className="game-img-quias" />
                       ) : (
                         <div className="art-label">Upload your image</div>
                       )}
                     </div>
 
-                    <div className="game-body">
-                      <div className="game-title">{g.title}</div>
-                      <div className="game-meta">{g.category}</div>
+                    <div className="game-body-quias">
+                      <div className="game-title-quias">{g.title}</div>
+                      <div className="game-meta-quias">{g.category}</div>
                     </div>
 
-                    <div className="card-bottom">
+                    <div className="card-bottom-quias">
                       <button
-                        className={`fav-small ${favSet.has(g.id) ? "is-fav" : ""}`}
+                        className={`fav-small-quias ${favSet.has(g.id) ? "is-fav" : ""}`}
                         onClick={() => toggleFav(g.id)}
                         title={favSet.has(g.id) ? "Remove favorite" : "Add favorite"}
                       >

@@ -1,7 +1,7 @@
 /* src/QuiasProfile.css */
 
 /* Root layout */
-.dashboard-root {
+.dashboard-root-quias {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
 }
 
 /* --- Left Sidebar --- */
-.left-sidebar {
+.left-sidebar-quias {
   width: 260px;
   background: linear-gradient(180deg, rgba(13,18,28,0.97), rgba(21,28,40,0.98));
   padding: 28px 20px;
@@ -22,26 +22,26 @@
   box-shadow: 8px 0 30px rgba(4,8,12,0.6);
 }
 
-.brand {
+.brand-quias {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 6px;
 }
-.brand-icon { font-size: 26px; }
-.brand-title {
+.brand-icon-quias { font-size: 26px; }
+.brand-title-quias {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.2px;
 }
 
-.side-menu {
+.side-menu-quias {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 8px;
 }
-.menu-item {
+.menu-item-quias {
   display: block;
   text-align: left;
   padding: 12px 10px;
@@ -52,23 +52,23 @@
   font-weight: 600;
   transition: all .18s ease;
 }
-.menu-item:hover { transform: translateX(6px); color: #fff; }
-.menu-item.active {
+.menu-item-quias:hover { transform: translateX(6px); color: #fff; }
+.menu-item-quias.active {
   background: linear-gradient(90deg, #ec4899, #8b5cf6);
   color: white;
   box-shadow: 0 6px 18px rgba(139,92,246,0.18);
 }
 
-.premium-box {
+.premium-box-quias {
   margin-top: auto;
   background: rgba(255,255,255,0.03);
   padding: 16px;
   border-radius: 12px;
   text-align: center;
 }
-.bolt { font-size: 28px; margin-bottom: 6px; }
-.premium-info { color: #cbd5e1; margin-bottom: 10px; }
-.unlock-btn {
+.bolt-quias { font-size: 28px; margin-bottom: 6px; }
+.premium-info-quias { color: #cbd5e1; margin-bottom: 10px; }
+.unlock-btn-quias {
   background: linear-gradient(90deg, #ec4899, #8b5cf6);
   color: white;
   border: none;
@@ -78,7 +78,7 @@
 }
 
 /* --- Main content --- */
-.main-content {
+.main-content-quias {
   flex: 1;
   padding: 24px 32px;
   box-sizing: border-box;
@@ -90,15 +90,15 @@
 }
 
 /* topbar */
-.topbar {
+.topbar-quias {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
   margin-bottom: 22px;
 }
-.search-wrap { flex: 1; max-width: 760px; }
-.search-input {
+.search-wrap-quias { flex: 1; max-width: 760px; }
+.search-input-quias {
   width: 100%;
   padding: 12px 16px;
   border-radius: 12px;
@@ -107,15 +107,15 @@
   color: #dbeafe;
   outline: none;
 }
-.top-actions { display: flex; align-items: center; gap: 14px; }
-.icon-btn { background: transparent; border: none; color: #e6eef8; font-size: 18px; }
-.profile-pill { display:flex; align-items:center; gap:10px; background: rgba(255,255,255,0.03); padding:6px 10px; border-radius:999px; }
-.avatar { width:36px; height:36px; border-radius:50%; background:linear-gradient(90deg,#f97316,#ef4444); }
-.profile-name { font-weight:700; }
-.chev { background:transparent; border:none; color:#dbeafe; }
+.top-actions-quias { display: flex; align-items: center; gap: 14px; }
+.icon-btn-quias { background: transparent; border: none; color: #e6eef8; font-size: 18px; }
+.profile-pill-quias { display:flex; align-items:center; gap:10px; background: rgba(255,255,255,0.03); padding:6px 10px; border-radius:999px; }
+.avatar-quias { width:36px; height:36px; border-radius:50%; background:linear-gradient(90deg,#f97316,#ef4444); }
+.profile-name-quias { font-weight:700; }
+.chev-quias { background:transparent; border:none; color:#dbeafe; }
 
 /* content grid - main + right column */
-.content-grid {
+.content-grid-quias {
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 28px;
@@ -125,7 +125,7 @@
 }
 
 /* HERO */
-.hero {
+.hero-quias {
   background: linear-gradient(90deg, rgba(83,45,204,0.18), rgba(16,185,129,0.06));
   border-radius: 16px;
   padding: 22px;
@@ -137,13 +137,13 @@
   box-shadow: 0 8px 28px rgba(2,6,23,0.5);
   min-height: 200px;
 }
-.hero-left .tag { font-weight:600; color:#c7defa; margin-bottom:8px; }
-.hero-title { font-size:28px; margin:0; color: #fff; font-weight:800; }
-.hero-meta { color: #d6eef7; margin-top:8px; }
-.hero-actions { display:flex; gap:12px; align-items:center; }
+.hero-left-quias .tag { font-weight:600; color:#c7defa; margin-bottom:8px; }
+.hero-title-quias { font-size:28px; margin:0; color: #fff; font-weight:800; }
+.hero-meta-quias { color: #d6eef7; margin-top:8px; }
+.hero-actions-quias { display:flex; gap:12px; align-items:center; }
 
 /* Buttons */
-.btn-outline {
+.btn-outline-quias {
   padding:10px 14px;
   border-radius:10px;
   border: 1px solid rgba(255,255,255,0.06);
@@ -151,7 +151,7 @@
   color: #fff;
   font-weight:700;
 }
-.btn-primary {
+.btn-primary-quias {
   padding:10px 16px;
   border-radius:10px;
   border: none;
@@ -162,15 +162,15 @@
 }
 
 /* panel container */
-.panel { margin-top: 22px; }
+.panel-quias { margin-top: 22px; }
 
 /* panel header */
-.panel-header { display:flex; flex-direction:column; gap:12px; margin-bottom:8px; align-items: center; justify-content: center; text-align: center; width: 100%; }
-.panel-header h3 { margin:0; font-size:20px; display:flex; align-items:center; gap:10px; }
-.category-row { display:flex; gap:8px; flex-wrap:wrap; justify-content: center; align-items: center; width: 100%; }
+.panel-header-quias { display:flex; flex-direction:column; gap:12px; margin-bottom:8px; align-items: center; justify-content: center; text-align: center; width: 100%; }
+.panel-header-quias h3 { margin:0; font-size:20px; display:flex; align-items:center; gap:10px; }
+.category-row-quias { display:flex; gap:8px; flex-wrap:wrap; justify-content: center; align-items: center; width: 100%; }
 
 /* category buttons */
-.cat-btn {
+.cat-btn-quias {
   padding:8px 12px;
   border-radius:10px;
   background: rgba(255,255,255,0.03);
@@ -178,14 +178,14 @@
   color: #cfe9ff;
   font-weight:600;
 }
-.cat-btn.active {
+.cat-btn-quias.active {
   background: linear-gradient(90deg,#8b5cf6,#ec4899);
   color: white;
   box-shadow: 0 8px 22px rgba(139,92,246,0.12);
 }
 
 /* --- Games grid --- */
-.games-grid {
+.games-grid-quias {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
@@ -196,7 +196,7 @@
 }
 
 /* Game card - general styling */
-.game-card {
+.game-card-quias {
   background: var(--card);
   border-radius: 14px;
   padding: 12px;
@@ -212,10 +212,10 @@
   text-align: center;
   width: 100%;
 }
-.game-card:hover { transform: translateY(-6px); box-shadow: 0 18px 38px rgba(0,0,0,0.6); }
+.game-card-quias:hover { transform: translateY(-6px); box-shadow: 0 18px 38px rgba(0,0,0,0.6); }
 
 /* Game art - default styling for main games grid */
-.game-art {
+.game-art-quias {
   height: 110px;
   border-radius: 10px;
   background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
@@ -230,25 +230,25 @@
 }
 
 /* Game image styling */
-.game-img {
+.game-img-quias {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.art-label {
+.art-label-quias {
   color: #aaa;
   font-size: 12px;
   font-style: italic;
 }
 
 /* body */
-.game-body { flex: 1; display:flex; flex-direction:column; gap:6px; align-items: center; justify-content: center; width: 100%; }
-.game-title { font-weight:700; color:#eaf6ff; line-height:1.1; }
-.game-meta { color: #9fb7d6; font-size: 13px; }
+.game-body-quias { flex: 1; display:flex; flex-direction:column; gap:6px; align-items: center; justify-content: center; width: 100%; }
+.game-title-quias { font-weight:700; color:#eaf6ff; line-height:1.1; }
+.game-meta-quias { color: #9fb7d6; font-size: 13px; }
 
 /* fixed bottom area for actions */
-.card-bottom {
+.card-bottom-quias {
   display:flex;
   justify-content: center;
   align-items:center;
@@ -258,7 +258,7 @@
 }
 
 /* fav small */
-.fav-small {
+.fav-small-quias {
   background: rgba(255,255,255,0.02);
   border:none;
   padding:8px 10px;
@@ -266,13 +266,13 @@
   color:#ffd6e0;
   font-weight:700;
 }
-.fav-small.is-fav {
+.fav-small-quias.is-fav {
   background: linear-gradient(90deg,#ff7a7a,#ffd36a);
   color:#081018;
 }
 
 /* play small (fixed place, right) */
-.play-small {
+.play-small-quias {
   background: linear-gradient(90deg,#00d084,#00aaff);
   border:none;
   color:#041018;
