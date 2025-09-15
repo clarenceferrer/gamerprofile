@@ -1,0 +1,298 @@
+/* BrendaProfile.css */
+
+/* Import Minecraft font */
+@font-face {
+  font-family: 'mine'; 
+  src: url('/minecrafter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Main container */
+.brenda-profile {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('/b.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.brenda-profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+}
+
+.profile-content,
+.games-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Back arrow */
+.b-back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 59, 59, 0.8);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid #ff3b3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.b-back-arrow:hover {
+  background: rgb(255, 59, 59);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 59, 59, 0.4);
+}
+
+/* Profile info */
+.brenda_profile-info {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url('/tom.jpg') center/cover no-repeat;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 0 20px 0;
+  box-shadow: 0 8px 32px rgba(255, 59, 59, 0.3);
+  width: 100%;
+  border: 2px solid rgba(255, 59, 59, 0.3);
+  overflow: hidden; 
+}
+
+.brenda_profile-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.681); 
+  z-index: 0;
+  border-radius: 20px; 
+}
+
+/* Profile text & picture */
+.brenda_profile-info .b-ign,
+.brenda_profile-info .real-name,
+.brenda_profile-info .b-profile-picture {
+  position: relative;
+  z-index: 1;
+}
+
+.b-profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 59, 59, 0.8);
+  margin: 0 0 20px 0;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 59, 59, 0.5);
+}
+
+.b-ign {
+  font-size: 3.5rem;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #ff3b3b;
+  font-weight: bold;
+}
+
+.real-name {
+  font-size: 1.8rem;
+  margin: 0;
+  opacity: 0.9;
+  color: #ede9e9;
+}
+
+/* Games carousel container */
+.brenda-game-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0;
+  overflow-x: visible; 
+  padding-bottom: 20px;
+}
+
+/* Game cards */
+.brenda-game-card {
+  position: relative;
+  width: 200px; 
+  height: 300px; 
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.brenda-game-card.active {
+  transform: scale(1.3);
+  box-shadow: 0 25px 60px rgba(255, 59, 59, 0.6);
+}
+
+.brenda-game-card.left,
+.brenda-game-card.right {
+  transform: scale(1);
+  opacity: 0.9;
+}
+
+.game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 15px;
+}
+
+/* Game overlay */
+.game-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.b-game-name {
+  color: #ffffff;
+  font-weight: bold;
+    font-size: 1.2rem;
+  
+}
+
+/* Achievements */
+.b-achievements-panel {
+  max-width: 1000px; 
+  width: 90%;
+  margin: 0 auto 30px auto;
+  background: rgba(0,0,0,0.55);
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 0 10px 25px rgba(255, 59, 59, 0.3);
+}
+
+.b-achievements-panel h4.selected-game-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff3b3b;
+  font-family: mine;
+}
+
+.milestones li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #ede9e9;
+}
+
+.b-gaming_achi {
+  font-family: mine;
+}
+
+/* Unified carousel cards */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.carousel-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: -60px;
+  position: relative;
+}
+
+.carousel-card {
+  width: 180px;
+  height: 280px; 
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-card.active {
+  width: 250px;
+  height: 380px;
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(255,59,59,0.6);
+}
+
+.carousel-card.left,
+.carousel-card.right {
+  transform: scale(0.85) translateY(20px);
+  opacity: 0.7;
+}
+
+/* Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  background: transparent; 
+  border: none;
+  color: white; 
+  font-size: 3rem; 
+  width: auto; 
+  height: auto;
+  padding: 5px 15px; 
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn.left {
+  left: -20px;
+}
+
+.carousel-btn.right {
+  right: -20px;
+}
+
+.carousel-btn:hover {
+  color: #ff3b3b; 
+  transform: translateY(-50%) scale(1.2); 
+}

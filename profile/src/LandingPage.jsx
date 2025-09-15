@@ -56,12 +56,12 @@ const LandingPage = () => {
                     <p>Kate Cristen Santos</p>
                   </div>
                 </Link>
-                <Link to="/baroma" className="gamer-card-link">
+                <Link to="/brenda-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
-                      <img src="/api/placeholder/200/200" alt="Brenda Baroma" />
+                      <img src="/brenda.jpeg" alt="Brenda Baroma" />
                     </div>
-                    <h3>Baroma</h3>
+                    <h3>Breabxbe</h3>
                     <p>Brenda Baroma</p>
                   </div>
                 </Link>

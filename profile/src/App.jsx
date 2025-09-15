@@ -4,9 +4,11 @@ import LandingPage from './LandingPage';
 import GamerProfile from './ferrer/GamerProfile';
 import KateProfile from './santos/KateProfile';
 import KlyeProfile from './sierra/KlyeProfile';
+import BrendaProfile from './baroma/BrendaProfile'; 
 import './App.css';
 
 function App() {
+  
   const profileData = {
     companyName: "Klye Gaming Profile",
     icon: "🎮",
@@ -36,7 +38,6 @@ function App() {
       { type: "achievement", title: "Best Support", description: "Recognized as the best support player", date: "November 2023" },
       { type: "rank", title: "Honor of Kings Elite", description: "Achieved the highest rank in Honor of Kings", date: "October 2023" },
       { type: "achievement", title: "CODM Legendaries", description: "Achieved the 16x Legendary rank in Call of Duty Mobile", date: "October 2022" },
-
     ],
   };
 
@@ -48,6 +49,7 @@ function App() {
           <Route path="/gamer-profile" element={<GamerProfile />} />
           <Route path="/kate-profile" element={<KateProfile />} />
           <Route path="/klye-profile" element={<KlyeProfile profileData={profileData} />} />
+          <Route path="/brenda-profile" element={<BrendaProfile />} /> 
         </Routes>
       </div>
     </Router>
