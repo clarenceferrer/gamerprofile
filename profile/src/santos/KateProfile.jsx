@@ -95,7 +95,7 @@ const gamerData = {
       <div className="header-profile">
         <h1 className="page-title">Welcome to Kalea's Gaming Profile</h1>
 
-        <div className="header-info">
+        <div className="header-info"> 
           <div className="back">
             <Link to="/">←</Link>
           </div>
@@ -152,7 +152,7 @@ const gamerData = {
     </div>
     </div>
     </div>
-              <p className="clickprompt">Click the card to view my achievements</p>
+              <p className="clickprompt">Click the card to view milestones</p>
             </div>
 );
 }
