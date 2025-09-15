@@ -5,6 +5,7 @@ import GamerProfile from './ferrer/GamerProfile';
 import KateProfile from './santos/KateProfile';
 import KlyeProfile from './sierra/KlyeProfile';
 import BrendaProfile from './baroma/BrendaProfile'; 
+import QuiasProfile from './quias/QuiasProfile';
 import './App.css';
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
           <Route path="/gamer-profile" element={<GamerProfile />} />
           <Route path="/kate-profile" element={<KateProfile />} />
           <Route path="/klye-profile" element={<KlyeProfile profileData={profileData} />} />
-          <Route path="/brenda-profile" element={<BrendaProfile />} /> 
+          <Route path="/brenda-profile" element={<BrendaProfile />} />
+          <Route path="/quias-profile" element={<QuiasProfile />} />
         </Routes>
       </div>
     </Router>

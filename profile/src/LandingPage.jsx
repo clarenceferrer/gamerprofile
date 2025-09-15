@@ -68,12 +68,15 @@ const LandingPage = () => {
               </div>
               
               <div className="gamer-cards-grid-2">
-                <Link to="/quias" className="gamer-card-link">
+                <Link to="/quias-profile" className="gamer-card-link">
                   <div className="gamer-card">
                     <div className="player-image">
-                      <img src="/api/placeholder/200/200" alt="Andrei Quias" />
+                      <img src="/picture.png" 
+                      alt="Andrei Quias" 
+                      onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "/picture.png"; }}
+                    />
                     </div>
-                    <h3>Quias</h3>
+                    <h3>Ares</h3>
                     <p>Andrei Quias</p>
                   </div>
                 </Link>
