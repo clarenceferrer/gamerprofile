@@ -106,7 +106,7 @@ const GamerProfile = () => {
             onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "/ferrer.jpg"; }}
           />
           <div className="profile-details">
-            <h2 className="ign">{gamerData.ign}</h2>
+            <h2 className="ferrer-ign">{gamerData.ign}</h2>
             <p className="real-name">{gamerData.realName}</p>
           </div>
         </div>
@@ -127,7 +127,7 @@ const GamerProfile = () => {
                 }}
               >
                 {gamerData.games[selectedGame].milestones.map((milestone, milestoneIndex) => (
-                  <li key={`${selectedGame}-${milestoneIndex}`} className="milestone" style={{ animationDelay: `${milestoneIndex * 0.1}s` }}>
+                  <li key={`${selectedGame}-${milestoneIndex}`} className="ferrer-milestone" style={{ animationDelay: `${milestoneIndex * 0.1}s` }}>
                     {milestone}
                   </li>
                 ))}
